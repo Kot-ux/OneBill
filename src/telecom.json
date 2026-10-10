@@ -1,0 +1,12 @@
+[
+  { "province": "British Columbia", "internet": 154.0, "cellular": 71.2 },
+  { "province": "Alberta", "internet": 152.2, "cellular": 70.1 },
+  { "province": "Saskatchewan", "internet": 140.4, "cellular": 72.5 },
+  { "province": "Manitoba", "internet": 138.6, "cellular": 65.8 },
+  { "province": "Newfoundland and Labrador", "internet": 118.3, "cellular": 70.4 },
+  { "province": "Prince Edward Island", "internet": 114.6, "cellular": 69.2 },
+  { "province": "New Brunswick", "internet": 112.8, "cellular": 69.3 },
+  { "province": "Ontario", "internet": 109.5, "cellular": 65.9 },
+  { "province": "Nova Scotia", "internet": 108.7, "cellular": 68.6 },
+  { "province": "Quebec", "internet": 75.3, "cellular": 74.8 }
+]
