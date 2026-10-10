@@ -1,0 +1,59 @@
+{
+  "name": "PhoneLine",
+  "type": "object",
+  "properties": {
+    "label": {
+      "type": "string",
+      "description": "Friendly name, e.g. Julie's iPhone 15"
+    },
+    "phone_number": {
+      "type": "string"
+    },
+    "carrier": {
+      "type": "string"
+    },
+    "owner_name": {
+      "type": "string",
+      "description": "Family member this line belongs to"
+    },
+    "plan_name": {
+      "type": "string"
+    },
+    "monthly_cost": {
+      "type": "number"
+    },
+    "data_allowance_gb": {
+      "type": "number"
+    },
+    "data_used_gb": {
+      "type": "number"
+    },
+    "minutes_used": {
+      "type": "number"
+    },
+    "sms_used": {
+      "type": "number"
+    },
+    "contract_end_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "split_percentage": {
+      "type": "number",
+      "default": 100,
+      "description": "Share of this line's cost that the owner pays"
+    },
+    "autopay": {
+      "type": "boolean",
+      "default": false
+    },
+    "is_active": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "required": [
+    "label",
+    "carrier"
+  ]
+}

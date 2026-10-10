@@ -1,0 +1,34 @@
+{
+  "name": "Deal",
+  "type": "object",
+  "properties": {
+    "carrier": {
+      "type": "string"
+    },
+    "plan_name": {
+      "type": "string"
+    },
+    "monthly_price": {
+      "type": "number"
+    },
+    "data_gb": {
+      "type": "number"
+    },
+    "contract_months": {
+      "type": "number",
+      "default": 0
+    },
+    "perks": {
+      "type": "string"
+    },
+    "is_best_value": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "required": [
+    "carrier",
+    "plan_name",
+    "monthly_price"
+  ]
+}

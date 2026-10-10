@@ -1,0 +1,58 @@
+{
+  "name": "Bill",
+  "type": "object",
+  "properties": {
+    "carrier": {
+      "type": "string"
+    },
+    "line_id": {
+      "type": "string",
+      "description": "PhoneLine this bill belongs to"
+    },
+    "amount": {
+      "type": "number"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "plan",
+        "data",
+        "calls",
+        "add_ons",
+        "roaming",
+        "device",
+        "taxes",
+        "other"
+      ],
+      "default": "plan"
+    },
+    "due_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "unpaid",
+        "paid"
+      ],
+      "default": "unpaid"
+    },
+    "paid_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "description": {
+      "type": "string"
+    },
+    "attachment_uri": {
+      "type": "string",
+      "description": "Private storage uri of the uploaded bill file"
+    }
+  },
+  "required": [
+    "carrier",
+    "amount",
+    "due_date"
+  ]
+}

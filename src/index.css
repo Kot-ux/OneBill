@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 240 6% 6%;
+    --foreground: 0 0% 98%;
+    --card: 240 5% 11%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 5% 11%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 258 100% 70%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 240 4% 16%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 4% 15%;
+    --muted-foreground: 240 5% 65%;
+    --accent: 240 4% 18%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 356 72% 56%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 4% 18%;
+    --input: 240 4% 18%;
+    --ring: 258 100% 70%;
+    --chart-1: 258 100% 70%;
+    --chart-2: 172 66% 50%;
+    --chart-3: 322 82% 62%;
+    --chart-4: 43 96% 64%;
+    --chart-5: 199 89% 60%;
+    --radius: 1.125rem;
+    --font-heading: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
+    --font-body: 'Inter', ui-sans-serif, system-ui, sans-serif;
+    --font-display: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+
+  .dark {
+    --background: 240 6% 6%;
+    --foreground: 0 0% 98%;
+    --card: 240 5% 11%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 5% 11%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 258 100% 70%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 240 4% 16%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 4% 15%;
+    --muted-foreground: 240 5% 65%;
+    --accent: 240 4% 18%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 356 72% 56%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 4% 18%;
+    --input: 240 4% 18%;
+    --ring: 258 100% 70%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  input[type='date']::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    opacity: 0.45;
+  }
+}
+
+/* Soft colourful glow used on hero / summary cards */
+.aurora {
+  background-image:
+    radial-gradient(58% 78% at 8% 6%, rgba(124, 92, 255, 0.62) 0%, rgba(124, 92, 255, 0) 62%),
+    radial-gradient(55% 72% at 92% 10%, rgba(255, 92, 158, 0.45) 0%, rgba(255, 92, 158, 0) 64%),
+    radial-gradient(72% 88% at 58% 104%, rgba(45, 212, 191, 0.38) 0%, rgba(45, 212, 191, 0) 66%);
+}
+
+.aurora-soft {
+  background-image:
+    radial-gradient(55% 75% at 12% 8%, rgba(124, 92, 255, 0.34) 0%, rgba(124, 92, 255, 0) 64%),
+    radial-gradient(60% 80% at 88% 22%, rgba(255, 92, 158, 0.24) 0%, rgba(255, 92, 158, 0) 66%);
+}
+
+.surface {
+  background-color: hsl(var(--card));
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 1.5rem;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.rise {
+  animation: rise 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
