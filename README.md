@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const db = globalThis.__B44_DB__ || { auth:{ isAuthenticated: async()=>false, me: async()=>null }, entities:new Proxy({}, { get:()=>({ filter:async()=>[], get:async()=>null, create:async()=>({}), update:async()=>({}), delete:async()=>({}) }) }), integrations:{ Core:{ UploadFile:async()=>({ file_url:'' }) } } };
 
 # Base44 Project
@@ -62,3 +63,6 @@ GitHub integration: [https://docs.db.com/developers/app-code/local-development/g
 Local development: [https://docs.db.com/developers/backend/overview/local-dev/local-development-overview](https://docs.db.com/developers/backend/overview/local-dev/local-development-overview)
 
 Support: [https://app.db.com/support](https://app.db.com/support)
+=======
+# PlanPal
+>>>>>>> 42a352200c0356c511345b6276c3244ac39577d3
