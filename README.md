@@ -1,30 +1,27 @@
-<<<<<<< HEAD
-const db = globalThis.__B44_DB__ || { auth:{ isAuthenticated: async()=>false, me: async()=>null }, entities:new Proxy({}, { get:()=>({ filter:async()=>[], get:async()=>null, create:async()=>({}), update:async()=>({}), delete:async()=>({}) }) }), integrations:{ Core:{ UploadFile:async()=>({ file_url:'' }) } } };
+# OneBill
 
-# Base44 Project
+Use this repository to run and edit the app locally, then publish changes back through the platform.
 
-Use this repository to run and edit the app locally, then publish changes back through db.
+Any change pushed to the repository will also be reflected in the frontend Builder.
 
-Any change pushed to the repo will also be reflected in the Base44 Builder.
+---
 
 ## Prerequisites
 
 1. Clone the repository using the project's Git URL.
 2. Navigate to the project directory.
-3. Install dependencies: `npm install`.
-4. Install the Base44 CLI: `npm install -g base44@latest`.
-5. Install [Deno](https://docs.deno.com/runtime/getting_started/installation/) — the local Base44 backend runs on it.
-
-Run `base44 --help` (or see the [CLI reference](https://docs.db.com/developers/references/cli/commands/introduction)) for the full command surface.
+3. Install dependencies:
+   ```bash
+   npm install
 
 ## Run Locally
 
 Three commands, from the project root:
 
 ```bash
-base44 login   # one-time per machine
-base44 link    # one-time per clone
-base44 dev     # local backend + frontend together
+cli login   # One-time per machine
+cli link    # One-time per clone
+cli dev     # Local backend + frontend together
 ```
 
 Open the frontend URL that `base44 dev` prints (typically `http://localhost:5173`).
@@ -41,7 +38,7 @@ Notes:
 To work on just the frontend against your app's live hosted backend:
 
 ```bash
-base44 dev --remote
+cli dev --remote
 ```
 
 ⚠️ In this mode writes go to your app's **production data** — plain `base44 dev` keeps everything local.
@@ -64,5 +61,5 @@ Local development: [https://docs.db.com/developers/backend/overview/local-dev/lo
 
 Support: [https://app.db.com/support](https://app.db.com/support)
 =======
-# PlanPal
+# OneBill
 >>>>>>> 42a352200c0356c511345b6276c3244ac39577d3
